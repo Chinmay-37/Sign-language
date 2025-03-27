@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoFree - A World Beyond Sound</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="title">ECHOFREE <br>A WORLD BEYOND SOUND</h1>
+        </header>
+
+        <div class="auth-buttons">
+            <a href="{{ url_for('login') }}" class="btn">Login</a>
+            <a href="{{ url_for('register') }}" class="btn">Register</a>
+        </div>
+
+        <main>
+          <div class="features-container">
+            <div class="feature" id="gesture">
+                <h1>Gesture to Text</h1>
+                <p>Convert sign language gestures into text.</p>
+            </div>
+            <div class="feature" id="speech">
+                <h1>Speech to Text</h1>
+                <p>Convert spoken words into text.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='deaf-people.jpg') }}" alt="Deaf Community Image">
+        </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
