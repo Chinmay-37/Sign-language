@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sign Language Project</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='public/css/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='public/css/index.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Sign Language Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>public/
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('tutorial') }}">Tutorial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('learn') }}">Learn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('signup') }}">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-us-section py-15">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-6">
+                    <h3>Our Mission</h3>
+                    <p>At the Sign Language Project, our mission is to bridge the gap between sign language users and the digital world. We believe that communication should be accessible to everyone, and through our innovative Sign Language to Text Converter, we are helping create a more inclusive society for all.</p>
+
+                    <h3>How It Works</h3>
+                    <p>Our solution uses advanced machine learning (ML) techniques to recognize sign language gestures and convert them into readable text. By utilizing the camera feed through OpenCV, our system captures the signs in real-time, detects the alphabet or symbol being used, and outputs the corresponding text instantly.</p>
+
+                    <h3>Our Features</h3>
+                    <ul>
+                        <li>Real-time sign language detection using camera input</li>
+                        <li>Accurate conversion of sign language gestures into text</li>
+                        <li>User-friendly interface for easy interaction</li>
+                        <li>Supports various alphabets and gestures for more effective communication</li>
+                        <li>Powered by cutting-edge machine learning models for improved accuracy</li>
+                    </ul>
+                </div>
+                <!-- Image Content -->
+                <div class="col-lg-6 text-center">
+                    <img src="{{ url_for('static', filename='public/images/aboutus.png') }}" alt="Sign Language Features" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

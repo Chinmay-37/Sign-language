@@ -1,0 +1,68 @@
+/* Learn More Section */
+.learn-more-section {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 80px 20px;
+}
+
+.learn-more-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.learn-more-section h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.learn-more-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* History Image - Move Much Lower */
+.learn-more-section .col-lg-6.text-center:first-of-type {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 100px; /* Moves the image significantly lower */
+}
+
+/* Media Image - Make Significantly Bigger */
+.learn-more-section .col-lg-6.text-center:last-of-type img {
+    max-width: 110%; /* Increase image size beyond container */
+    height: auto;
+}
+
+/* Image Styling */
+.learn-more-section .img-fluid {
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out;
+}
+
+.learn-more-section .img-fluid:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .learn-more-section .row {
+        text-align: center;
+    }
+
+    /* Adjust images for smaller screens */
+    .learn-more-section .col-lg-6.text-center:first-of-type {
+        margin-top: 60px; /* Adjust for smaller screens */
+    }
+
+    .learn-more-section .col-lg-6.text-center:last-of-type img {
+        max-width: 100%;
+    }
+}
