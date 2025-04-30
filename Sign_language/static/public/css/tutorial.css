@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Tutorial Page Styling */
+.tutorial-container {
+    max-width: 1100px;
+    margin: 100px auto 50px;
+    padding: 40px 30px;
+    background: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.subtext {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Steps Section */
+.steps {
+    margin-top: 20px;
+}
+
+.step {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.step:hover {
+    background: #dfe6e9;
+    transform: translateY(-3px);
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #34495e;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Workflow Image - Centered */
+.workflow-image {
+    padding-top: 5px;
+    width: 40%;
+    max-width: 90%;
+    height: 45rem;
+    border-radius: 10px;
+    /* box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2); */
+    transition: transform 0.3s ease-in-out;
+    display: block;  /* Ensures it's treated as a block element */
+    margin: 0 auto;  /* Centers the image horizontally */
+}
+
+.workflow-image:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+.btn-custom {
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #e67e22;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .workflow-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

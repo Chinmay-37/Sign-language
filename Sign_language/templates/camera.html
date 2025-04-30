@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live ASL Recognition</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            border: 2px solid black;
+            width: 60%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live ASL Recognition</h1>
+    <p>Show a sign to the camera, and the system will recognize it.</p>
+    <img src="{{ url_for('video_feed') }}" alt="Live ASL Recognition">
+    <br><br>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

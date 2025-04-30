@@ -1,0 +1,63 @@
+/* About Us Section */
+.about-us-section {
+    background-color: #f4f6f9; /* Light background for About Us */
+    color: #333;
+    padding: 80px 20px;
+}
+
+.about-us-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.about-us-section h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-us-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.about-us-section ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-us-section ul li {
+    margin-bottom: 10px;
+}
+
+.about-us-section img {
+    max-width: 60%;  /* Reduces image size */
+    height: auto;    /* Keeps aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+/* Image Styling */
+.about-us-section .img-fluid {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out;
+}
+
+.about-us-section .img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us-section .row {
+        text-align: center;
+    }
+}
